@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: orange;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    padding: 0 10px 0 10px;
+    line-height: 50px;
+    background-color: rgb(73, 65, 65);
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    position: fixed;
+    z-index: 1;
+}
+.logo img{
+    width:50px;
+    height: 50px;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px 0 15px;
+}
+.menu ul li ul.drop_menu{
+    text-align: center;
+    display: none;
+    background-color: rgb(73, 65, 65);
+}
+.menu ul li:hover ul.drop_menu{
+    display: block;
+}
+.menu ul li:hover{
+    background-color: black;
+}
+.menu ul li a:hover{
+    border-bottom: 2px solid aqua;
+    color: aqua;
+}
+.phone_menu{
+    display: none;
+}
+.menu-phone{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100vh;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+#phone-navbar, #ipad-navbar,#watch-navbar,#laptop-navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+}
+
+.back{
+    text-align: left;
+    font-size: 30px;
+    margin: 20px 20px;
+}
+.navbar_f{
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+.navbar_f h1{
+    margin: 20px 0;
+}
+.menu-phone a{
+    color: white;
+}
+.menu-phone h1:hover a{
+    color: aqua;
+} 
+.close{
+    font-size: 50px;
+    text-align: right;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+.body{
+    position: relative;
+    top:50px;
+    text-align: center;
+    color: black;
+}
+.body input{
+    outline: none;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding-left: 30px;
+    width: 450px;
+    height: 40px;
+}
+.contain{
+    display: flex;
+    padding: 20px 20px;
+    justify-content: space-between;
+}
+.list{
+    width: 78%;
+    text-align: center;
+    height: max-content;
+    position: relative;
+    margin-left: 25%;
+    border-radius: 30px;
+    padding: 20px 20px;
+    /* background-color: antiquewhite; */
+    text-align: left;
+}
+.list img{
+    width:70px;
+    margin: 5px 5px 5px 5px;
+}
+.choose{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    justify-content: space-between;
+}
+.choose h1,a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.slide{
+    padding: 0;
+    width: 20%;
+    height: 70vh;
+    overflow: hidden;
+    position: fixed;
+    border-radius: 20px;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 0;
+}
+.apple_product{
+    display: flex;
+    justify-content:space-between ;
+}
+.list .iphone{
+    text-align: center;
+    margin: 0 3%;
+    width:100px;
+    height: 120px;
+}
+
+.list .iphone img{
+    width:100%;
+    height: 100%;
+}
+.laptop_product{
+    display: flex;
+    justify-content:space-between ;
+}
+.list .laptop{
+    width: 80px;
+    height: 110px;
+    text-align: center;
+    margin: 0 3%;
+    width: max-content;
+}
+.list .laptop img{
+    width:100%;
+    height:100%;
+}
+.price{
+    background: white;
+    color:red;
+}
+.speaker_product{
+    display: flex;
+    justify-content: space-between;
+}
+.list .speaker{
+    text-align: center;
+    width: 110px;
+    height:100px;
+}
+.list .speaker img{
+    width:100%;
+    height:100%;
+}
+.ipad_product{
+    display: flex;
+    justify-content: space-between;
+}
+.list .ipad{
+    text-align: center;
+    width: 100px;
+    height:90px;
+}
+.list .ipad img{
+    width:100%;
+    height:100%;
+}
+.watch_product{
+    display: flex;
+    justify-content: space-between;
+}
+.list .watch{
+    text-align: center;
+    width: 100px;
+    height:90px;
+}
+.list .watch img{
+    width:100%;
+    height:100%;
+}
+.slide .slide_img{
+    width: 100%;
+    height: 100%;
+}
+.slide img{
+    width:100%;
+    height: 100%;
+    animation: slide 10s infinite;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateY(0);
+    }
+    10%{
+        transform: translateY(0);
+    }
+    20%{
+        transform: translateY(-100%);
+    }
+    27%{
+        transform: translateY(-100%);
+    }
+    35%{
+        transform: translateY(-200%);
+    }
+    45%{
+        transform: translateY(-200%);
+    }
+    55%{
+        transform: translateY(-300%); 
+    }
+    65%{
+        transform: translateY(-300%); 
+    }
+    75%{
+        transform: translateY(-400%); 
+    }
+    85%{
+        transform: translateY(-400%); 
+    }
+    90%{
+        transform: translateY(-500%); 
+    }
+    100%{
+        transform: translateY(-500%); 
+    }
+}
+@media (max-width: 900px){
+    .slide{
+        width: 180px;
+        height:300px;
+    }
+    .menu{
+        font-size: 15px;
+    }
+    .list .choose{
+        font-size: 10px;
+    }
+    .list .iphone{
+        height:75px;
+        width:70px;
+        font-size: 10px;
+    }
+    .list .laptop{
+        height:60px;
+        width:60px;
+        font-size: 9px;
+    }
+    .name_product{
+        font-size: 25px;
+    }
+    .Find_your_devices{
+        font-size: 25px;
+    }
+    .body input{
+        width:300px;
+    }
+    .list .speaker,.list .ipad,.list .watch{
+        width:70px;
+        height: 80px;
+        font-size: 10px;
+    }
+}
+@media (max-width: 700px){
+    .slide{
+        width: 125px;
+        height:250px;
+    }
+    .menu ul li a{
+        font-size: 10px;
+        margin:0 10px 0 10px;
+    }
+}
+@media (max-width: 500px){
+    .contain{
+        display: inline;
+    }
+    .slide{
+        margin: 0 auto;
+        position: relative;
+        width:300px;
+        height: 200px;
+        display: flex;
+    }
+    .list{
+        margin: auto;
+        width: 93%;
+        padding: 0;
+    }
+    .slide img{
+        position: relative;
+        width:300px;
+        height: 100%;
+        animation: slide 10s infinite;
+    }
+    @keyframes slide{
+        0%{
+            transform: translateX(0);
+        }
+        10%{
+            transform: translateX(0);
+        }
+        20%{
+            transform: translateX(-100%);
+        }
+        27%{
+            transform: translateX(-100%);
+        }
+        35%{
+            transform: translateX(-200%);
+        }
+        45%{
+            transform: translateX(-200%);
+        }
+        55%{
+            transform: translateX(-300%); 
+        }
+        65%{
+            transform: translateX(-300%); 
+        }
+        75%{
+            transform: translateX(-400%); 
+        }
+        85%{
+            transform: translateX(-400%); 
+        }
+        90%{
+            transform: translateX(-500%); 
+        }
+        100%{
+            transform: translateX(-500%); 
+        }
+    }
+}
+@media (max-width: 400px){
+    .phone_menu{
+        display: inline;
+        margin-right: 20px;
+    }
+    .menu{
+        display: none;
+    }
+}

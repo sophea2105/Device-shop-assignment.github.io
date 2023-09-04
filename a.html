@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    body{
+        background-size: cover;
+    }
+    .button{
+        margin: auto;
+        text-align: center;
+        width: 100px;
+    }
+    button{
+        width:50px;
+        height:30px;
+        margin: 5px;
+    }
+</style>
+<body>
+    <h1 id="text">Do you love me?</h1>
+    <div class="button">
+        <button onclick="yes()" id="yes" style="background-color: green; color: white; border: 2px solid black; cursor: pointer;">Yes</button>
+        <button onmouseover="no()" style="position: absolute; background-color: red; color: white; border: 2px solid black; cursor: pointer;" id="no">No</button>
+    </div>
+    <script>
+        function yes(){
+            document.getElementById("yes").style.display="none";
+            document.getElementById("no").style.display="none";
+            document.getElementById("text").innerHTML="I love you";
+           document.body.background.style=url('https://cliply.co/wp-content/uploads/2021/09/CLIPLY_372109170_FREE_FIREWORKS_400.gif');
+        }
+        function no(){
+            var button= document.getElementById("no");
+            var a = Math.floor(Math.random()*100)+1;
+            var b = Math.floor(Math.random()*100)+1;
+            button.style.left=a+"%";
+            button.style.top=b+"vh";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPad</title>
+    <link rel="stylesheet" href="home.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="home.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="menu-phone" id="navbar">
+            <div class="close"><i class='bx bx-x' onclick="closenav()"></i></div>
+            <div class="navbar_f">
+                <h1><a href="index.html">Home</a></h1>
+                <h1 onclick="menu_phone()">Smartphone</h1>
+                <h1 onclick="menu_ipad()">iPad/Tablet</h1>
+                <h1 onclick="menu_laptop()">Laptop</h1>
+                <h1 onclick="menu_watch()">Smart_Watch</h1>
+            </div>
+        </div>
+        <div id="phone-navbar" style="display: none; cursor: pointer;">
+            <div class="back" onclick="back_to_menu()"><i class='bx bx-arrow-back'></i></div>
+            <div class="navbar_f">
+                <h1>iPhone</h1>
+                <h1>Oppo</h1>
+                <h1>Vivo</h1>
+                <h1>Huawei</h1>
+                <h1>Realme</h1>
+            </div>
+        </div>
+        <div id="ipad-navbar" style="display: none; cursor: pointer;">
+            <div class="back" onclick="back_to_menu()"><i class='bx bx-arrow-back'></i></div>
+            <div class="navbar_f">
+                <h1>ipad</h1>
+                <h1>Galaxy Tap</h1>
+                <h1>Google Tablet</h1>
+                <h1>Oppo Tablet</h1>
+                <h1>Huawei Tablet</h1>
+            </div>
+        </div>
+        <div id="watch-navbar" style="display: none; cursor: pointer;">
+            <div class="back" onclick="back_to_menu()"><i class='bx bx-arrow-back'></i></div>
+            <div class="navbar_f">
+                <h1>Apple Watch</h1>
+                <h1>Galaxy Watch</h1>
+                <h1>Oppo Watch</h1>
+                <h1>Huawei Watch</h1>
+            </div>
+        </div>
+        <div id="laptop-navbar" style="display: none; cursor: pointer;">
+            <div class="back" onclick="back_to_menu()"><i class='bx bx-arrow-back'></i></div>
+            <div class="navbar_f">
+                <h1>MacBook</h1>
+                <h1>MSI</h1>
+                <h1>Dell</h1>
+                <h1>Asus</h1>
+            </div>
+        </div>
+        <div class="logo"><img src="image/Logo.png"></div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Smartphone</a>
+                <ul class="drop_menu" id="drop_menu">
+                    <li onclick="iphone();"><a>Iphone</a></li>
+                    <li onclick="samsung();"><a>Samsung</a></li>
+                    <li onclick="oppo();"><a>Oppo</a></li>
+                    <li onclick="vivo();"><a>Vivo</a></li>
+                    <li onclick="hauwei();"><a>Hauwei</a></li>
+                    <li onclick="realme();"><a>Realme</a></li>
+                </ul>
+                </li>
+                <li><a href="#">iPad/Tablet</a>
+                    <ul class="drop_menu"  id="drop_menu">
+                        <li><a>ipad</a></li>
+                        <li><a>Galaxy Tap</a></li>
+                        <li><a>Googple Tablet</a></li>
+                        <li><a>Nokia Teblet</a></li>
+                        <li><a>Oppo Teblet</a></li>
+                        <li><a>Hauwei Teblet</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Smartwatch</a>
+                    <ul class="drop_menu"  id="drop_menu">
+                        <li><a>Apple watch</a></li>
+                        <li><a>Galaxy watch</a></li>
+                        <li><a>Oppo watch</a></li>
+                        <li><a>Hauwei watch</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Laptop</a>
+                    <ul class="drop_menu"  id="drop_menu">
+                        <li><a>MacBook</a></li>
+                        <li><a>MSI</a></li>
+                        <li><a>Dell</a></li>
+                        <li><a>Asus</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="phone_menu">
+            <h1 onclick="opennav()"><i class='bx bx-menu' ></i></h1>
+        </div>
+    </div>
+    <div class="body">
+        <h1 class="Find_your_devices">Find your devices</h1>
+        <input type="search" placeholder="Search for products...">
+        <div class="contain">
+            <br><br>
+            <div class="slide">
+                <div class="slide_img">
+                    <img src="https://i-store.net/_sh/63/6343.jpg" id="slide_img1">
+                </div>
+                <div class="slide_img">
+                    <img src="https://images.macrumors.com/article-new/2018/11/m1-ipad-pro.jpg" id="slide_img2">
+                </div>
+                <div class="slide_img">
+                    <img src="https://www.notebookcheck.net/fileadmin/Notebooks/Apple/MacBook_Pro_14_2023_M2_Pro/AKA8518.jpg" id="slide_img3">
+                </div>
+                <div class="slide_img">
+                    <img src="https://img.ltwebstatic.com/images3_pi/2022/12/15/1671091925edcb5a989bc2677b2464025d0bbde3a7_thumbnail_750x.webp" id="slide_img4">
+                </div>
+                <div class="slide_img">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/airpods-pro-2022-1663797595.jpg?crop=0.5xw:1xh;center,top&resize=1200:*" id="slide_img5">
+                </div>
+                <div class="slide_img">
+                    <img src="https://reviewed-com-res.cloudinary.com/image/fetch/s--dvXpz6cB--/b_white,c_limit,cs_srgb,f_auto,fl_progressive.strip_profile,g_center,h_668,q_auto,w_1187/https://reviewed-production.s3.amazonaws.com/1651622088546/JBL_Flip_6_hero_brick.jpg" id="slide_img6">
+                </div>
+            </div>
+            <br><br>
+            <div class="list">
+                <div class="choose">
+                    <a href="phone.html"><h1><i class='bx bx-mobile-alt'></i>Phone</h1></a>
+                    <a href="watch.html"><h1><i class='bx bxs-watch' ></i>Watch</h1></a>
+                    <a href="ipad.html"><h1><i class='bx bx-tab' ></i>Tablet</h1></a>
+                    <a href="laptop.html"><h1><i class='bx bx-laptop' ></i>Laptop</h1></a>
+                </div>
+            </div>
+</body>
+</html>
